@@ -12,10 +12,8 @@ import CryptoSwift
 class MarvelRequests : NSObject {
     static var sharedInstance =  MarvelRequests()
     let api: String = "https://gateway.marvel.com/"
-//    let publicKey: String = "INSERT YOUR MARVEL PUBLIC KEY"
-//    let privateKey: String = "INSERT YOUR MARVEL PRIVATE KEY"
-    let publicKey: String = "d71553cd5c809dbc25feac28d1d7c363"
-    let privateKey: String = "5260f0ccd0f1e1572fba13c06a16110bea6836a7"
+    let publicKey: String = "INSERT YOUR MARVEL PUBLIC KEY"
+    let privateKey: String = "INSERT YOUR MARVEL PRIVATE KEY"
     let ts = NSDate().timeIntervalSince1970.description
     
     override init(){
