@@ -19,6 +19,7 @@
 		FF9F2D4F21ADE5540063093B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D4E21ADE5540063093B /* Parser.swift */; };
 		FF9F2D5121ADE5C10063093B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D5021ADE5C10063093B /* JSONParser.swift */; };
 		FF9F2D5321ADE5E10063093B /* BaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D5221ADE5E10063093B /* BaseParser.swift */; };
+		FF9F2D5521ADE9CC0063093B /* MarvelRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D5421ADE9CC0063093B /* MarvelRequests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FF9F2D4E21ADE5540063093B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 		FF9F2D5021ADE5C10063093B /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
 		FF9F2D5221ADE5E10063093B /* BaseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParser.swift; sourceTree = "<group>"; };
+		FF9F2D5421ADE9CC0063093B /* MarvelRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelRequests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				FF9F2D4B21ADE4C60063093B /* Request.swift */,
+				FF9F2D5421ADE9CC0063093B /* MarvelRequests.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				FF9F2D5321ADE5E10063093B /* BaseParser.swift in Sources */,
 				FF9F2D5121ADE5C10063093B /* JSONParser.swift in Sources */,
 				FF7939B321ADA7EB00A20F68 /* ViewController.swift in Sources */,
+				FF9F2D5521ADE9CC0063093B /* MarvelRequests.swift in Sources */,
 				FF9F2D4C21ADE4C60063093B /* Request.swift in Sources */,
 				FF7939B121ADA7EB00A20F68 /* AppDelegate.swift in Sources */,
 			);
