@@ -13,6 +13,10 @@
 		FF7939B821ADA7EC00A20F68 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF7939B721ADA7EC00A20F68 /* Assets.xcassets */; };
 		FF7939BB21ADA7EC00A20F68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF7939B921ADA7EC00A20F68 /* LaunchScreen.storyboard */; };
 		FF7939C621ADA7EC00A20F68 /* MarvelAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF7939C521ADA7EC00A20F68 /* MarvelAppTests.swift */; };
+		FF9F2D4C21ADE4C60063093B /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D4B21ADE4C60063093B /* Request.swift */; };
+		FF9F2D4F21ADE5540063093B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D4E21ADE5540063093B /* Parser.swift */; };
+		FF9F2D5121ADE5C10063093B /* JSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D5021ADE5C10063093B /* JSONParser.swift */; };
+		FF9F2D5321ADE5E10063093B /* BaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9F2D5221ADE5E10063093B /* BaseParser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		FF7939C121ADA7EC00A20F68 /* MarvelAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarvelAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF7939C521ADA7EC00A20F68 /* MarvelAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAppTests.swift; sourceTree = "<group>"; };
 		FF7939C721ADA7EC00A20F68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF9F2D4B21ADE4C60063093B /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		FF9F2D4E21ADE5540063093B /* Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
+		FF9F2D5021ADE5C10063093B /* JSONParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONParser.swift; sourceTree = "<group>"; };
+		FF9F2D5221ADE5E10063093B /* BaseParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseParser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,8 @@
 		FF7939AF21ADA7EB00A20F68 /* MarvelApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF9F2D4D21ADE5450063093B /* Parser */,
+				FF7939D021ADA86E00A20F68 /* Request */,
 				FF7939B021ADA7EB00A20F68 /* AppDelegate.swift */,
 				FF7939B221ADA7EB00A20F68 /* ViewController.swift */,
 				FF7939B421ADA7EB00A20F68 /* Main.storyboard */,
@@ -94,6 +104,24 @@
 				FF7939C721ADA7EC00A20F68 /* Info.plist */,
 			);
 			path = MarvelAppTests;
+			sourceTree = "<group>";
+		};
+		FF7939D021ADA86E00A20F68 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				FF9F2D4B21ADE4C60063093B /* Request.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		FF9F2D4D21ADE5450063093B /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				FF9F2D4E21ADE5540063093B /* Parser.swift */,
+				FF9F2D5021ADE5C10063093B /* JSONParser.swift */,
+				FF9F2D5221ADE5E10063093B /* BaseParser.swift */,
+			);
+			path = Parser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +225,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9F2D4F21ADE5540063093B /* Parser.swift in Sources */,
+				FF9F2D5321ADE5E10063093B /* BaseParser.swift in Sources */,
+				FF9F2D5121ADE5C10063093B /* JSONParser.swift in Sources */,
 				FF7939B321ADA7EB00A20F68 /* ViewController.swift in Sources */,
+				FF9F2D4C21ADE4C60063093B /* Request.swift in Sources */,
 				FF7939B121ADA7EB00A20F68 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

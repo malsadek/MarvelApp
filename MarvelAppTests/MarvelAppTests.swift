@@ -2,7 +2,7 @@
 //  MarvelAppTests.swift
 //  MarvelAppTests
 //
-//  Created by Toufic koussa on 11/27/18.
+//  Created by Mariam Al Sadek on 11/27/18.
 //  Copyright © 2018 Mariam Sadek. All rights reserved.
 //
 
