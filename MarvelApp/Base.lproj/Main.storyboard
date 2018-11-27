@@ -58,5 +58,46 @@
             </objects>
             <point key="canvasLocation" x="254" y="27"/>
         </scene>
+        <!--Characte Details View Controller-->
+        <scene sceneID="hoL-qh-7Xl">
+            <objects>
+                <viewController storyboardIdentifier="details" id="Ie4-Bj-qRW" customClass="CharacteDetailsViewController" customModule="MarvelApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SXg-oJ-jXT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ngy-RT-VQW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ngy-RT-VQW" secondAttribute="height" multiplier="1:1" id="rtp-KQ-mAY"/>
+                                </constraints>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dkP-uN-0d2">
+                                <rect key="frame" x="0.0" y="403" width="375" height="264"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ngy-RT-VQW" firstAttribute="top" secondItem="Ca4-xM-2bm" secondAttribute="top" id="IAJ-wz-T3e"/>
+                            <constraint firstItem="dkP-uN-0d2" firstAttribute="top" secondItem="Ngy-RT-VQW" secondAttribute="bottom" constant="8" id="Kzr-YB-NkR"/>
+                            <constraint firstItem="dkP-uN-0d2" firstAttribute="bottom" secondItem="Ca4-xM-2bm" secondAttribute="bottom" id="Nuq-hs-txu"/>
+                            <constraint firstItem="dkP-uN-0d2" firstAttribute="trailing" secondItem="Ca4-xM-2bm" secondAttribute="trailing" id="gNI-h5-Pg8"/>
+                            <constraint firstItem="Ngy-RT-VQW" firstAttribute="trailing" secondItem="Ca4-xM-2bm" secondAttribute="trailing" id="kb0-mP-s5z"/>
+                            <constraint firstItem="Ngy-RT-VQW" firstAttribute="leading" secondItem="Ca4-xM-2bm" secondAttribute="leading" id="rNt-3c-dOR"/>
+                            <constraint firstItem="dkP-uN-0d2" firstAttribute="leading" secondItem="Ca4-xM-2bm" secondAttribute="leading" id="xo5-qD-Ldc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ca4-xM-2bm"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xfb-3l-JJH"/>
+                    <connections>
+                        <outlet property="imageView" destination="Ngy-RT-VQW" id="GsZ-aW-aQ1"/>
+                        <outlet property="tableView" destination="dkP-uN-0d2" id="j6I-2r-eGd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UHH-yL-9b1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="27"/>
+        </scene>
     </scenes>
 </document>

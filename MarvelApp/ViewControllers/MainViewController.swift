@@ -74,7 +74,10 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //present details
         let marvelChar = self.marvelCharacters[indexPath.row]
-
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        let nextVC = storyBoard.instantiateViewController(withIdentifier: "details") as! CharacteDetailsViewController
+        nextVC.character = marvelChar
+        self.navigationController?.pushViewController(nextVC, animated: true)
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         if indexPath.row == (self.marvelCharacters.count - 1) {
