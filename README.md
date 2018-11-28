@@ -10,11 +10,15 @@ iOS application made for Marvel API to display list of characters and their deta
 - iOS 9.0+
 - Xcode
 
-## Manual Installation and Setup
+## Installation 
+### Manual
 To run the application: 
-1. Download the project and open using xcode.  
-2. Open ```MarvelRequests.swift``` and replace ```publicKey``` and ```privateKey``` with your Marvel Keys.
-3. Run.
+- Download the project and open using xcode.  
+### Clone
+- Clone this repo to your local machine using `https://github.com/malsadek/MarvelApp.git`.
 
+## Setup
+- Open ```MarvelRequests.swift``` and replace ```publicKey``` and ```privateKey``` with your Marvel Keys.
+- Run.
 Congratulations!  
 
