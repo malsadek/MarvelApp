@@ -22,16 +22,25 @@ class CharacteDetailsViewController: MarvelViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.automaticallyAdjustsScrollViewInsets = false
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
         self.tableView.dataSource = self
         self.tableView.delegate = self
         self.tableView.tableFooterView = UIView()
         self.tableView.allowsSelection = false
         
-        self.navigationItem.title = self.character.name + " " + String(self.character.id)
+        self.navigationItem.title = "\(self.character.id) \(self.character.name)"
         
         self.info = Dictionary(dictionaryLiteral: (sectionTitles[0], self.character.comics),(sectionTitles[1], self.character.events), (sectionTitles[2], self.character.stories), (sectionTitles[3], self.character.series))
-        
+       
+        let infoCount = character.comics.count + character.series.count + character.events.count + character.stories.count
+        if infoCount == 0 {
+            //No data to show
+            let noData = UILabel(frame: self.tableView.frame)
+            noData.text = "No Data Found"
+            noData.textAlignment = .center
+            self.view.addSubview(noData)
+        }
         self.imageView.imageFromURL(urlString: character?.thumbnail.urlString ?? "")
         // Do any additional setup after loading the view.
     }
@@ -55,6 +64,8 @@ extension CharacteDetailsViewController: UITableViewDelegate, UITableViewDataSou
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
         let marvelItem = self.info[sectionTitles[indexPath.section]]?[indexPath.row]
         cell.textLabel?.text = marvelItem?.name
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = .byWordWrapping
         return cell
     }
     

@@ -21,7 +21,7 @@ class MainViewController: MarvelViewController {
     var spinner: UIActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.automaticallyAdjustsScrollViewInsets = false
         self.charactersTableView.delegate = self
         self.charactersTableView.dataSource = self
         self.charactersTableView.register(UITableViewCell.self, forCellReuseIdentifier: cellIdentifier)
@@ -68,10 +68,13 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource{
         let cell = tableView.dequeueReusableCell(withIdentifier: self.cellIdentifier, for: indexPath)
         let marvelChar = self.marvelCharacters[indexPath.row]
         cell.textLabel?.text =  marvelChar.name
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = .byWordWrapping
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         //present details
         let marvelChar = self.marvelCharacters[indexPath.row]
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
