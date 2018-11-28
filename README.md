@@ -20,5 +20,5 @@ To run the application:
 ## Setup
 - Open ```MarvelRequests.swift``` and replace ```publicKey``` and ```privateKey``` with your Marvel Keys.
 - Run.
-Congratulations!  
+- Congratulations!  
 
